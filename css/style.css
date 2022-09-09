@@ -43,8 +43,6 @@ margin-top: -120px;
 z-index: 1;
 }
 
-
-
 .inlab {
 font-family: 'Montserrat';
 font-style: normal;
@@ -78,7 +76,7 @@ color: #000000;
 }
 
 .ridhos {
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .post-ter {
@@ -102,7 +100,7 @@ font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 17px;
+line-height: 7px;
 
 color: #02A28F;
 }
@@ -174,6 +172,8 @@ color: #FFFFFF;
 
 }
 
+
+
 .more {
 font-family: 'Montserrat';
 font-style: normal;
@@ -238,10 +238,41 @@ color: #FFFFFF;
 
 }
 
+.text-box {
+  line-height: 20px;
+}
+
+.card-title-main {
+  color: #000000;
+  text-align: start;
+  margin-left: -0px;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.card-title-main a{
+  color: #000000;
+}
+
+.card-body {
+  width: 360px;
+  height: 150px;
+  line-height: 18px;
+}
+
+
 .card-body4{
 
 box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 border-radius: 10px;
+}
+
+.card-title4 {
+  color: #000000;
+  text-align: start;
+  margin-left: -109px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .card-img4 {
@@ -374,6 +405,19 @@ color: #000000;
 
   .home a{
     color: white;
+  }
+
+  .card-title a {
+    color: #000000;
+  }
+
+  .nav2 {
+    position: absolute;
+    background: white;
+    z-index: 0;
+    width:856px;
+    height: 100px;
+    margin-top: 270px;
   }
 
  
