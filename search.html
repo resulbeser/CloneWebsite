@@ -277,9 +277,9 @@
 
   <script>
 
-   let urlSearchParams = new URLSearchParams(window.location.search);
-   let searchTerm = Object.fromEntries(urlSearchParams.entries()).searchTerm;
-   document.getElementById("searchTermHolder").innerHTML = searchTerm; 
+   var urlSearchParams = new URLSearchParams(window.location.search);
+   var searchTerm = Object.fromEntries(urlSearchParams.entries()).searchTerm;
+   document.getElementById("searchTermHolder").innerHTML = search_term; 
 
 
   </script>
