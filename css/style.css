@@ -35,15 +35,19 @@ line-height: 44px;
 color: #FFFFFF;
 }
 
-.nav-list {
+.navlist {
 font-family: 'Montserrat';
 font-style: normal;
-font-weight: 200;
+font-weight: 600;
 font-size: 16px;
 line-height: 20px;
 
 color: #FFFFFF;
 }
+
+
+
+
 
 .text-box {
 position: absolute;
@@ -82,13 +86,29 @@ font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
-line-height: 20px;
+line-height: 24px;
 /* identical to box height */
 color: #000000;
 }
 
+.byy2 {
+  font-family: 'Inter';
+  font-weight: 600;
+}
+
 .ridhos {
+  font-family: 'Inter';
   font-weight: 400;
+}
+
+.page2-head2 {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #616161;
 }
 
 .post-ter {
@@ -225,8 +245,8 @@ color: #616161;
 .label1 {
 font-family: 'Montserrat';
 font-style: normal;
-font-weight: 550;
-font-size: 18px;
+font-weight: 600;
+font-size: 16px;
 line-height: 15px;
 
 color: #616161;
@@ -271,8 +291,8 @@ color: #FFFFFF;
 
 .card-body {
   width: 360px;
-  height: 150px;
-  line-height: 18px;
+  height: 200px;
+  line-height: 22px;
 }
 
 
@@ -283,9 +303,10 @@ border-radius: 10px;
 }
 
 .card-title4 {
+  font-family: 'Montserrat';
   color: #000000;
   text-align: start;
-  margin-left: -109px;
+  margin-left: -85px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -300,8 +321,24 @@ background: #D9D9D9;
 border-radius: 10px;
 }
 
+.text-truncate-container {
+  width: 360px;
+}
+
+.text-truncate-container p{
+  font-weight: 400;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 aside h6 {
     color: #fff;
+    font-family: 'Montserrat';
     text-align: center;
     height: 35px;
 }
@@ -372,12 +409,16 @@ aside h6 {
 
   .contents-head {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 39px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
 /* identical to box height */
-color: #000000;
+    color: #000000;
+  }
+
+  .cohed2 {
+    font-family: 'Inter';
   }
 
   .contents-head3 {
@@ -437,6 +478,7 @@ color: #000000;
   }
 
   .brs {
+    font-family: 'Montserrat';
     margin-right: 152px;
     color: #616161;
   }
@@ -447,6 +489,24 @@ color: #000000;
     font-size: 14px;
   }
 
+  .text4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 1000px;
+  }
+
+  .footext {
+    text-align: center;
+    margin-top: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
  
 
 

@@ -51,7 +51,7 @@
           <div class="searchResult">
             <h6 class="searchPage">
               <strong>
-                <span id="searchTermHolder"></span>Terimi için sonuçlar
+                "<span id="searchTermHolder"></span>" Terimi için sonuçlar
               </strong>
             </h6>
           </div>
@@ -278,9 +278,8 @@
   <script>
 
    var urlSearchParams = new URLSearchParams(window.location.search);
-   var searchTerm = Object.fromEntries(urlSearchParams.entries()).searchTerm;
-   document.getElementById("searchTermHolder").innerHTML = search_term; 
-
+   var searchTerm = Object.fromEntries(urlSearchParams.entries()).search_term;
+   document.getElementById("searchTermHolder").innerHTML = searchTerm; 
 
   </script>
 
