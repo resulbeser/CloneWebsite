@@ -24,31 +24,37 @@
               <a class="nav-link text-light" href="contents.html">Eğitim</a>
               <a class="nav-link text-light" href="contents.html">Programlama</a>
               <a class="nav-link text-light" href="contents.html">Teknoloji</a>
-              <a class="nav-link text-light" href="#"><i class="bi bi-search" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i></a>             
+              <a class="nav-link text-light" href="#"><i class="bi bi-search p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i></a>              
             </div>
           </div>
         </div>
       </nav>
   </header>
-  <div class="bg-color1 offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title cantit" id="offcanvasTopLabel">Resul Beşer</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <form class="d-flex m-search" role="search" action="search.html" method="get" >
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_term">
-        <button class="btn" type="submit"><i class="bi bi-search cantit"></i></button>
-      </form>
-    </div>
+<div class="bg-color1 offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title cantit" id="offcanvasTopLabel">Resul Beşer</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
+  <div class="offcanvas-body">
+    <form class="d-flex m-search" role="search" method="get" action="search.html">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="search_term">
+      <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+    </form>
+  </div>
+</div>
   <!--Navbar End-->
 
   <!--Main Start-->
     <div class="container-lg mt-5">
       <div class="row g-4 text-center">
         <div class="col-sm-12 col-md-8">
-
+          <div class="searchResult">
+            <h6 class="searchPage">
+              <strong>
+                <span id="searchTermHolder"></span>Terimi için sonuçlar
+              </strong>
+            </h6>
+          </div>
           <div class="main-img">
             <div class="nav2 rounded-bottom opacity-75 ">
               <div class="container-fluid opacity-100 text-box w-auto">
@@ -268,17 +274,17 @@
   <!--footer End-->
 
   <!--JavaScript-->
+
   <script>
-    var urlSearchParams = new URLSearchParams(window.location.search);
-    var params = Object.fromEntries(urlSearchParams.entries());
-    var searchTerm = params.searchTerm;
-    document.getElementById("searchTermHolder").innerHTML = search_term;
-    document.querySelector("[name='search_term']").value = searchTerm;
-    
+
+   var urlSearchParams = new URLSearchParams(window.location.search);
+   var searchTerm = Object.fromEntries(urlSearchParams.entries()).searchTerm;
+   document.getElementById("searchTermHolder").innerHTML = search_term; 
+
+
   </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-      
     </script>
   </body>
 </html>
